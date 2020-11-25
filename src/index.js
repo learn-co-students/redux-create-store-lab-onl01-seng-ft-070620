@@ -1,5 +1,3 @@
-// write your createStore function here
-
 function candyReducer(state = [], action) {
   switch (action.type) {
     case 'ADD_CANDY':
@@ -7,6 +5,10 @@ function candyReducer(state = [], action) {
     default:
       return state;
   }
+}
+
+function createStore(reducer){
+  return getState, dispatch
 }
 
 function render() {
@@ -17,6 +19,3 @@ function render() {
     throw new Error("the store's state has not been defined yet")
   }
 };
-
-// Use your createStore function and the functions provided here to create a store.
-// Once the store is created, call an initial dispatch.
